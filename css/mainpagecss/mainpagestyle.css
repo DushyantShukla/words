@@ -1,0 +1,286 @@
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Poiret+One';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #131326;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+#content-wrapper {
+    width: 100%;
+    height: 100%;
+    //border: 2px solid white;
+    padding: 0;
+    margin: 0;
+}
+
+#firstpage {
+    width: 100%;
+    height: 100%;
+    //border: 2px solid white;
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    height: 100%;
+    background-color: #060614;
+    min-width: 45px;
+    width: 45px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#stagingarea {
+    height: 100%;
+    background-color: #b5b5df;
+    border-left: 2px solid white;
+    border-right: 5px solid white;
+    min-width: 320px;
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline-block;
+}
+
+#mainarea {
+    height: 100%;
+    background-color: #b5b5df;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: inline;
+    //overflow: hidden;
+    //border-left: 1px solid red;
+}
+
+#mainarea-inner {
+    //min-width: 100%;
+    background-color: #d2d2ec;
+    height: 100%;
+    //border-left: 2px solid red;
+}
+
+#mainarea-inner-header {
+    //widht: 100%;
+    height: 40px;
+    padding-top: 5px;
+    border-bottom: 3px solid white;
+    margin-left: 330px;
+    margin-right: 6px;
+}
+
+#expandarticle {
+    border: 2px solid #b5b5df;
+    background-color: #b5b5df;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    float: right;
+    margin-right: 8px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#column-wrap {
+    overflow: hidden;
+    height: 100%;
+}
+
+#header-turnoff {
+    position: absolute;
+    bottom: 7px;
+    height: 30px;
+    width: 30px;
+    margin-left: 7px;
+    padding-left: 5px;
+    //border: 1px solid white;
+    border-radius: 15px;
+    padding-top: 2px;
+    background-color: rgb(26, 28, 75);
+}
+
+#header-branding {
+    //position: absolute;
+    margin-top: 10px;
+    margin-left: 1px;
+    padding: 0;
+    height: 42px;
+    width: 42px;
+    //border: 1px solid white;
+    background-color: white;
+    border-radius: 21px;
+    display: block;
+    //padding-left: 5px;
+}
+
+#header-branding a {
+    height: 42px;
+    width: 42px;
+    background-image: url("../../images/github.png");
+    background-size: cover;
+    display: block;
+}
+
+#header-new {
+    margin-top: 20px;
+    margin-left: 7px;
+    height: 30px;
+    width: 30px;
+    //border: 1px solid white;
+    display: block;
+    align-content: center;
+    padding-left: 5px;
+    border-radius: 15px;
+    padding-top: 2px;
+    background-color: rgb(26, 28, 75);
+}
+
+#header-search {
+    margin-top: 15px;
+    margin-left: 7px;
+    height: 30px;
+    width: 30px;
+    //border: 1px solid white;
+    display: block;
+    align-content: center;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-top: 3px;
+    background-color: rgb(26, 28, 75);
+}
+
+.glyphicon.glyphicon-resize-full {
+    font-size: 15px;
+    color: white;
+    ;
+}
+
+.glyphicon.glyphicon-log-out {
+    font-size: 20px;
+    color: white;
+}
+
+.glyphicon.glyphicon-plus-sign {
+    font-size: 30px;
+    color: white;
+}
+
+.glyphicon.glyphicon-plus {
+    font-size: 20px;
+    color: white;
+}
+
+.glyphicon.glyphicon-search {
+    font-size: 20px;
+    color: white;
+}
+
+.glyphicon.glyphicon-info-sign {
+    font-size: 30px;
+    color: white;
+}
+
+.glyphicon.glyphicon-floppy-remove {
+    font-size: 18px;
+    color: white;
+}
+
+.glyphicon.glyphicon-floppy-save {
+    font-size: 18px;
+    color: white;
+}
+
+#newarticle-div {
+    width: 100%;
+    height: 100%;
+    background-color: #d2d2ec;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#newarticle-div-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #d2d2ec;
+}
+
+#dumpanddoneheader {
+    width: 100%;
+    height: 45px;
+    border-bottom: 3px solid white;
+    //display: block;
+    //padding-top: 1.5%;
+    //padding-bottom: 2%;
+    padding-top: 5px;
+}
+
+#writingarea {}
+
+#dump {
+    //position: absolute;
+    //right: 3%;
+    //display: block;
+    border: 2px solid #b5b5df;
+    background-color: #b5b5df;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    padding-top: 4px;
+    padding-left: 4px;
+    float: right;
+    margin-right: 10px;
+}
+
+#done {
+    //position: absolute;
+    //right: 1%;
+    //display: block;
+    border: 2px solid #b5b5df;
+    background-color: #b5b5df;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    float: right;
+    margin-right: 10px;
+}
+
+.row {
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #mainarea {
+        display: none;
+    }
+    #stagingarea {
+        width: 100%;
+    }
+}
+
+
+}

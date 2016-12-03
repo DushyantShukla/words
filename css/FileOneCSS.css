@@ -1,0 +1,113 @@
+@import 'https://fonts.googleapis.com/css?family=Amaranth';
+@import 'https://fonts.googleapis.com/css?family=Jura:600';
+
+*{
+   margin:0;
+   padding:0;
+ }
+     
+ html{
+       height: 100%;
+       width: 100%;
+     }
+body{
+       height: 100%;
+       width: 100%;
+      // background-color: #e6ffcc;
+      // border: 1px solid green;
+       overflow-x:hidden;
+       //overflow-y:hidden;
+     }
+
+#wrapper-div{
+    margin:10px;
+    //padding-bottom: 10px;
+    height: 97%;
+   // border: 1px solid blue;
+}
+
+a.anchor-style{
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #c0c0c0;
+    //font-family: 'Amaranth', sans-serif;
+    font-family: 'Jura', sans-serif;
+}
+
+#header-wrapper{
+  //border: 3px solid green;
+  padding: 0px;
+  height: 10%;
+}
+
+#content-wrapper{
+    height: 88%; 
+    margin: 17px;
+    margin-top:0px;
+    //border:2px solid black;
+}
+
+/*.content{
+    margin:0px;
+    height: 85%;
+    //width:100%;
+    border: 3px solid red;
+}*/
+
+/*#section1 {
+	//height: auto !important;
+}
+.box{
+    //padding:50px;
+    height:100%;
+}*/
+
+/*.section, .slide,
+.section .fp-slide,
+.section .fp-tableCell{
+    height: 100px !important;
+}*/
+
+/*footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   Set the fixed height of the footer here 
+  height: 60px;
+  background-color: white;
+  border :1px solid red;
+}*/
+
+.navbar .navbar-toggle {
+    background-color: #fff; //Background color for holder
+    border: 1px solid #888;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #888; //Background color for bar in the holder
+}
+
+/*.nav .active{
+    background: aliceblue;
+    border: 1px solid #454040;
+    text-decoration-color: #454040 !important;
+}*/
+
+.active a {
+    background-color: #FFFFFF !important;
+    color: #454040 !important;
+    border: 1px solid #454040;
+}
+
+#mobile-nav{ display:none;}
+
+@media only screen and (max-width: 600px) {
+     #desktop-nav{ display:none;}
+     #mobile-nav{ 
+       display:block;
+       position:relative;
+       z-index:1;
+         opacity: 1;
+         background-color: white;
+      }
+}
+

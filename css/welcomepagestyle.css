@@ -1,0 +1,186 @@
+@import 'https://fonts.googleapis.com/css?family=Jura:600';
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower';
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Poiret+One';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    // background-color: #e6ffcc;
+    // border: 1px solid green;
+    background-color: #131326;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#content-wrapper {
+    //position:relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#navigationpanel {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#headerdiv {
+    height: 20%;
+    width: 100%;
+    //border: 1px solid white;
+    //position: fixed;
+    //z-index: 10;
+    //top: 0;
+    text-align: center;
+    visibility: visible;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+#footerdiv {
+    height: 4%;
+    width: 100%;
+    //border: 1px solid white;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    text-align: left;
+    color: white;
+    display: block;
+    //float: left;
+    font-family: 'Jura', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#footerdiv a {
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+#footerdiv a:hover {
+    //color: #f6f96d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footerdiv a:active {
+    color: #131326;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#headerdiv p {
+    //font-family: 'Jura', sans-serif;
+    //font-family: 'Indie Flower', cursive;
+    //font-family: 'Indie Flower', cursive;
+    //font-family: 'Pacifico', cursive;
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#headerdiv a {
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+#movetosignin, #movetosignup {
+    letter-spacing: 1px;
+}
+
+#movetosignup {
+    margin-left: 5px;
+}
+
+#movetosignup:hover {
+    //color: #f6f96d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#movetosignup:active {
+    color: #131326;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#movetosignin:hover {
+    //color: #f6f96d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#movetosignin:active {
+    color: #131326;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#containerdiv {
+    width: 100%;
+    height: 0;
+    //margin-top: 13%;
+    text-align: center;
+    //border: 3px solid red;
+    //position: relative;
+    //float: left;
+    //clear: left;
+    color: white;
+    //z-index: -10;
+    padding-top: 8vh;
+    font-family: 'Jura', sans-serif;
+}
+
+#containerdiv form input {
+    color: white;
+    background-color: #131326;
+    border-right-style: none;
+    border-top-style: none;
+    border-left-style: none;
+}
+
+#containerdiv form input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#containerdiv form label {
+    display: inline-block;
+    word-wrap: break-word;
+    vertical-align: middle;
+}
+
+#containerdiv form a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#containerdiv form a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#containerdiv form a:active {
+    text-decoration: none;
+    color: #131326;
+}
