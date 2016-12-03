@@ -25,6 +25,7 @@ $(document).ready(function () {
 
     $('[data-toggle="tooltip"]').tooltip();
 
+    //$('.scroll-pane').jScrollPane();
 });
 
   $(document).on('click', '#movetonewarticle', function () {
@@ -46,3 +47,8 @@ $(document).ready(function () {
       $.fn.fullpage.moveTo('page1', 1);
       console.log("done");
   });
+
+  /*$(document).ready(function(){
+	$('.scroll-pane').jScrollPane();
+  console.log('DUshnat');
+});*/

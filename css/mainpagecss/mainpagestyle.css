@@ -56,13 +56,15 @@ body {
     height: 100%;
     background-color: #b5b5df;
     border-left: 2px solid white;
-    border-right: 5px solid white;
+    border-right: 2px solid white;
     min-width: 320px;
     width: 320px;
     margin: 0;
     padding: 0;
     float: left;
     display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #mainarea {
@@ -85,11 +87,21 @@ body {
 
 #mainarea-inner-header {
     //widht: 100%;
-    height: 40px;
+    height: 43px;
     padding-top: 5px;
-    border-bottom: 3px solid white;
+    border-bottom: 1px solid white;
     margin-left: 330px;
     margin-right: 6px;
+}
+
+#mainarea-inner-content {
+    height: calc(100% - 48px);
+    border: 1px solid white;
+    margin-left: 330px;
+    margin-right: 6px;
+    margin-top: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #expandarticle {
@@ -104,6 +116,24 @@ body {
     padding-left: 5px;
 }
 
+#expandarticle:hover {
+    background-color: white;
+}
+
+#expandarticle:hover .glyphicon.glyphicon-resize-full {
+    //font-size: 20px;
+    color: #b5b5df;
+}
+
+#expandarticle:active {
+    background-color: #b5b5df;
+}
+
+#expandarticle:active .glyphicon.glyphicon-resize-full {
+    //font-size: 20px;
+    color: white;
+}
+
 #column-wrap {
     overflow: hidden;
     height: 100%;
@@ -115,11 +145,27 @@ body {
     height: 30px;
     width: 30px;
     margin-left: 7px;
-    padding-left: 5px;
+    padding-left: 6px;
     //border: 1px solid white;
     border-radius: 15px;
-    padding-top: 2px;
+    padding-top: 3px;
     background-color: rgb(26, 28, 75);
+}
+
+#header-turnoff:hover {
+    background-color: white;
+}
+
+#header-turnoff:hover .glyphicon.glyphicon-log-out {
+    color: rgb(26, 28, 75);
+}
+
+#header-turnoff:active {
+    background-color: rgb(26, 28, 75);
+}
+
+#header-turnoff:active .glyphicon.glyphicon-log-out {
+    color: white;
 }
 
 #header-branding {
@@ -152,10 +198,28 @@ body {
     //border: 1px solid white;
     display: block;
     align-content: center;
-    padding-left: 5px;
+    padding-left: 6px;
     border-radius: 15px;
-    padding-top: 2px;
+    padding-top: 4px;
     background-color: rgb(26, 28, 75);
+}
+
+#header-new:hover {
+    background-color: white;
+}
+
+#header-new:hover .glyphicon.glyphicon-plus {
+    //font-size: 20px;
+    color: rgb(26, 28, 75);
+}
+
+#header-new:active {
+    background-color: rgb(26, 28, 75);
+}
+
+#header-new:active .glyphicon.glyphicon-plus {
+    //font-size: 20px;
+    color: white;
 }
 
 #header-search {
@@ -167,15 +231,32 @@ body {
     display: block;
     align-content: center;
     border-radius: 15px;
-    padding-left: 5px;
+    padding-left: 3px;
     padding-top: 3px;
     background-color: rgb(26, 28, 75);
+}
+
+#header-search:hover {
+    background-color: white;
+}
+
+#header-search:hover .glyphicon.glyphicon-search {
+    //font-size: 20px;
+    color: rgb(26, 28, 75);
+}
+
+#header-search:active {
+    background-color: rgb(26, 28, 75);
+}
+
+#header-search:active .glyphicon.glyphicon-search {
+    //font-size: 20px;
+    color: white;
 }
 
 .glyphicon.glyphicon-resize-full {
     font-size: 15px;
     color: white;
-    ;
 }
 
 .glyphicon.glyphicon-log-out {
@@ -194,7 +275,7 @@ body {
 }
 
 .glyphicon.glyphicon-search {
-    font-size: 20px;
+    font-size: 22px;
     color: white;
 }
 
@@ -230,14 +311,21 @@ body {
 #dumpanddoneheader {
     width: 100%;
     height: 45px;
-    border-bottom: 3px solid white;
+    border-bottom: 1px solid white;
     //display: block;
     //padding-top: 1.5%;
     //padding-bottom: 2%;
     padding-top: 5px;
 }
 
-#writingarea {}
+#writingarea {
+    border: 1px solid white;
+    width: 100%;
+    height: calc(100% - 49px);
+    margin-top: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
 #dump {
     //position: absolute;
@@ -252,6 +340,24 @@ body {
     padding-left: 4px;
     float: right;
     margin-right: 10px;
+}
+
+#dump:hover {
+    background-color: white;
+}
+
+#dump:hover .glyphicon.glyphicon-floppy-remove {
+    //font-size: 20px;
+    color: #b5b5df;
+}
+
+#dump:active {
+    background-color: #b5b5df;
+}
+
+#dump:active .glyphicon.glyphicon-floppy-remove {
+    //font-size: 20px;
+    color: white;
 }
 
 #done {
@@ -269,6 +375,30 @@ body {
     margin-right: 10px;
 }
 
+#done:hover {
+    background-color: white;
+}
+
+#done:hover .glyphicon.glyphicon-floppy-save {
+    //font-size: 20px;
+    color: #b5b5df;
+}
+
+#done:active {
+    background-color: #b5b5df;
+}
+
+#done:active .glyphicon.glyphicon-floppy-save {
+    //font-size: 20px;
+    color: white;
+}
+
+
+/*.scroll-pane {
+    overflow-y: auto;
+    overflow-x: hidden;
+}*/
+
 .row {
     height: 100%;
 }
@@ -282,5 +412,4 @@ body {
     }
 }
 
-
-}
+@media only screen (min-width:320px) and (max-width:600px) {}
