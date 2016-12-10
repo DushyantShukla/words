@@ -298,8 +298,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: #d2d2ec;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 #newarticle-div-inner {
@@ -323,7 +323,7 @@ body {
     width: 100%;
     height: calc(100% - 49px);
     margin-top: 1px;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -411,3 +411,5 @@ body {
         width: 100%;
     }
 }
+
+@media only screen and (min-width:320px) and (max-width: 600px) {}
