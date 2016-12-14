@@ -3,7 +3,11 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 
     //$('.scroll-pane').jScrollPane();
-
+    $('[data-toggle="toggle"]').unbind('click').click(function() {
+      //debugger
+        var selector = $(this).data("target");
+        $(selector).toggleClass('in');
+    });
 });
 
 $(document).on('focusin', function(e) {
@@ -17,7 +21,6 @@ $(window).on('load',doresize);
 
 function doresize(){
 console.log("function called");
-debugger
   var winWidth = $(window).width();
   var contentAreaHeight = $('#mainarea-inner-content').height();
   contentAreaHeight-=80;
@@ -56,6 +59,7 @@ else if(winWidth <900 && winWidth>396){
   tinymce.init({
       selector: 'textarea',
       menubar: false,
+      resize: false,
       height: contentAreaHeight,
       plugins: [
           'advlist autolink lists link charmap print preview anchor',

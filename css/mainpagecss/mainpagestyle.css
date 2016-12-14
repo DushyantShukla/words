@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Poiret+One';
+@import 'https://fonts.googleapis.com/css?family=Jura:600';
 * {
     margin: 0;
     padding: 0;
@@ -59,17 +60,43 @@ body {
     border-right: 2px solid white;
     min-width: 274px;
     width: 320px;
+    //position: relative;
     margin: 0;
     padding: 0;
     float: left;
-    display: inline-block;
+    //display: inline-block;
+    //display: inline;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+#stagingareaheader {
+    margin-top: 20px;
+    //margin-left: 5px;
+    //margin-right: 5px;
+    //border-bottom: 2px solid white;
+    height: 30px;
+    //position: inherit;
+    //min-width: 274px;
+    width: auto;
+    font-family: 'Jura', sans-serif;
+    //background-color: red;
+    position: relative;
+    z-index: 9;
+}
+
+#stagingareaheader p {
+    margin-left: 2px;
+    margin-right: 5px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    //color: white;
 }
 
 #mainarea {
     height: 100%;
     background-color: #b5b5df;
+    //background-color: red;
     margin: 0;
     padding: 0;
     color: white;
@@ -81,8 +108,9 @@ body {
 #mainarea-inner {
     //min-width: 100%;
     background-color: #d2d2ec;
+    //background-color: red;
     height: 100%;
-    border-left: 2px solid red;
+    //border-left: 2px solid red;
 }
 
 #mainarea-inner-header {
@@ -90,9 +118,10 @@ body {
     height: 43px;
     //height: 6.3vh;
     padding-top: 5px;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     margin-left: 330px;
     margin-right: 6px;
+    font-family: 'Jura', sans-serif;
 }
 
 #mainarea-inner-content {
@@ -107,7 +136,7 @@ body {
     overflow-x: hidden;
 }
 
-#expandarticle {
+#deletearticle {
     border: 2px solid #b5b5df;
     background-color: #b5b5df;
     height: 30px;
@@ -115,24 +144,24 @@ body {
     border-radius: 15px;
     float: right;
     margin-right: 8px;
-    padding-top: 5px;
-    padding-left: 5px;
+    padding-top: 3px;
+    padding-left: 3px;
 }
 
-#expandarticle:hover {
+#deletearticle:hover {
     background-color: white;
 }
 
-#expandarticle:hover .glyphicon.glyphicon-resize-full {
+#deletearticle:hover .glyphicon.glyphicon-resize-full {
     //font-size: 20px;
     color: #b5b5df;
 }
 
-#expandarticle:active {
+#deletearticle:active {
     background-color: #b5b5df;
 }
 
-#expandarticle:active .glyphicon.glyphicon-resize-full {
+#deletearticle:active .glyphicon.glyphicon-resize-full {
     //font-size: 20px;
     color: white;
 }
@@ -297,12 +326,133 @@ body {
     color: white;
 }
 
-#newarticle-div {
-    width: 100%;
+.glyphicon.glyphicon-trash {
+    font-size: 18px;
+    color: white;
+}
+
+#deletearticle:hover .glyphicon.glyphicon-trash {
+    //font-size: 18px;
+    color: #b5b5df;
+}
+
+#deletearticle:active {
+    background-color: #b5b5df;
+}
+
+#deletearticle:active .glyphicon.glyphicon-trash {
+    //font-size: 18px;
+    color: white;
+}
+
+#savearticle {
+    border: 2px solid #b5b5df;
+    background-color: #b5b5df;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    float: right;
+    margin-right: 8px;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+#savearticle:hover {
+    background-color: white;
+}
+
+#savearticle:hover .glyphicon.glyphicon-floppy-save {
+    //font-size: 18px;
+    color: #b5b5df;
+}
+
+#savearticle:active {
+    background-color: #b5b5df;
+}
+
+#savearticle:active .glyphicon.glyphicon-floppy-save {
+    //font-size: 18px;
+    color: white;
+}
+
+#cancelchangedarticle {
+    border: 2px solid #b5b5df;
+    background-color: #b5b5df;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    float: right;
+    margin-right: 8px;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+#cancelchangedarticle:hover {
+    background-color: white;
+}
+
+#cancelchangedarticle:hover .glyphicon.glyphicon-floppy-remove {
+    //font-size: 18px;
+    color: #b5b5df;
+}
+
+#cancelchangedarticle:active {
+    background-color: #b5b5df;
+}
+
+#cancelchangedarticle:active .glyphicon.glyphicon-floppy-remove {
+    //font-size: 18px;
+    color: white;
+}
+
+#searcharticle-div {
     height: 100%;
-    background-color: #d2d2ec;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    background-color: #c9c9e8;
+    //background-color: red;
+    //border-left: 2px solid white;
+    //border-right: 2px solid white;
+    //min-width: 274px;
+    width: 0px;
+    margin: 0;
+    padding: 0;
+    margin-top: -50px;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -o-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    //visibility: collapse;
+    position: relative;
+    z-index: 10;
+}
+
+#searcharticle-div.in {
+    //width: 320px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+#searcharticle-div form input {
+    color: #131326;
+    background-color: #c9c9e8;
+    border-right-style: none;
+    border-top-style: none;
+    border-left-style: none;
+    border-bottom-style: 1px solid rgb(102, 102, 99);
+    width: 100%;
+    font-family: 'Jura', sans-serif;
+}
+
+#searcharticle-div-header {
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 7px;
+    //border-bottom: 2px solid rgb(102, 102, 99);
+    padding-left: 0px;
 }
 
 #newarticle-div-inner {
@@ -378,24 +528,6 @@ body {
     margin-right: 10px;
 }
 
-#done:hover {
-    background-color: white;
-}
-
-#done:hover .glyphicon.glyphicon-floppy-save {
-    //font-size: 20px;
-    color: #b5b5df;
-}
-
-#done:active {
-    background-color: #b5b5df;
-}
-
-#done:active .glyphicon.glyphicon-floppy-save {
-    //font-size: 20px;
-    color: white;
-}
-
 
 /*.scroll-pane {
     overflow-y: auto;
@@ -445,3 +577,6 @@ body {
 }
 
 @media only screen and (min-width:320px) and (max-width: 600px) {}
+
+
+}
