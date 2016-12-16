@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico|Poiret+One';
 @import 'https://fonts.googleapis.com/css?family=Jura:600';
+@import 'https://fonts.googleapis.com/css?family=Orbitron';
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +30,6 @@ body {
 #content-wrapper {
     width: 100%;
     height: 100%;
-    //border: 2px solid white;
     padding: 0;
     margin: 0;
 }
@@ -37,14 +37,13 @@ body {
 #firstpage {
     width: 100%;
     height: 100%;
-    //border: 2px solid white;
     padding: 0;
     margin: 0;
 }
 
 #header {
     height: 100%;
-    background-color: #060614;
+    background-color: #030318;
     min-width: 45px;
     width: 45px;
     float: left;
@@ -55,32 +54,23 @@ body {
 
 #stagingarea {
     height: 100%;
-    background-color: #b5b5df;
+    background-color: #101034;
     border-left: 2px solid white;
     border-right: 2px solid white;
     min-width: 274px;
     width: 320px;
-    //position: relative;
     margin: 0;
     padding: 0;
     float: left;
-    //display: inline-block;
-    //display: inline;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 #stagingareaheader {
     margin-top: 20px;
-    //margin-left: 5px;
-    //margin-right: 5px;
-    //border-bottom: 2px solid white;
     height: 30px;
-    //position: inherit;
-    //min-width: 274px;
     width: auto;
     font-family: 'Jura', sans-serif;
-    //background-color: red;
     position: relative;
     z-index: 9;
 }
@@ -90,27 +80,22 @@ body {
     margin-right: 5px;
     text-align: center;
     border-bottom: 2px solid white;
-    //color: white;
+    color: white;
+    letter-spacing: 0.2em;
 }
 
 #mainarea {
     height: 100%;
-    background-color: #b5b5df;
-    //background-color: red;
+    background-color: #101034;
     margin: 0;
     padding: 0;
     color: white;
     display: inline;
-    //overflow: hidden;
-    //border-left: 1px solid red;
 }
 
 #mainarea-inner {
-    //min-width: 100%;
-    background-color: #d2d2ec;
-    //background-color: red;
+    background-color: #101034;
     height: 100%;
-    //border-left: 2px solid red;
 }
 
 #mainarea-inner-header {
@@ -125,10 +110,10 @@ body {
 }
 
 #mainarea-inner-content {
-    height: calc(100% - 48px);
+    height: calc(100% - 42px);
     //height: calc(100% - 7.3vh);
     //border: 1px solid white;
-    //border: 1px solid green;
+    //border: 2px solid green;
     margin-left: 330px;
     margin-right: 6px;
     margin-top: 1px;
@@ -136,9 +121,22 @@ body {
     overflow-x: hidden;
 }
 
+#content-textarea {
+    height: 99%;
+    width: 100%;
+    //height: calc(100% - 7.3vh);
+    border: 1px solid white;
+    //border: 2px solid green;
+    //margin-left: 330px;
+    margin-right: 6px;
+    margin-top: 1px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 #deletearticle {
-    border: 2px solid #b5b5df;
-    background-color: #b5b5df;
+    border: 2px solid rgb(26, 28, 75);
+    background-color: rgb(26, 28, 75);
     height: 30px;
     width: 30px;
     border-radius: 15px;
@@ -148,22 +146,23 @@ body {
     padding-left: 3px;
 }
 
-#deletearticle:hover {
+
+/*#deletearticle:hover {
     background-color: white;
 }
 
 #deletearticle:hover .glyphicon.glyphicon-resize-full {
     //font-size: 20px;
     color: #b5b5df;
-}
+}*/
 
 #deletearticle:active {
-    background-color: #b5b5df;
+    background-color: white;
 }
 
 #deletearticle:active .glyphicon.glyphicon-resize-full {
     //font-size: 20px;
-    color: white;
+    color: rgb(26, 28, 75);
 }
 
 #column-wrap {
@@ -184,20 +183,21 @@ body {
     background-color: rgb(26, 28, 75);
 }
 
-#header-turnoff:hover {
+
+/*#header-turnoff:hover {
     background-color: white;
 }
 
 #header-turnoff:hover .glyphicon.glyphicon-log-out {
     color: rgb(26, 28, 75);
-}
+}*/
 
 #header-turnoff:active {
-    background-color: rgb(26, 28, 75);
+    background-color: white;
 }
 
 #header-turnoff:active .glyphicon.glyphicon-log-out {
-    color: white;
+    color: rgb(26, 28, 75);
 }
 
 #header-branding {
@@ -236,22 +236,25 @@ body {
     background-color: rgb(26, 28, 75);
 }
 
-#header-new:hover {
+
+/*#header-new:hover {
     background-color: white;
 }
 
 #header-new:hover .glyphicon.glyphicon-plus {
     //font-size: 20px;
     color: rgb(26, 28, 75);
-}
+}*/
 
 #header-new:active {
-    background-color: rgb(26, 28, 75);
+    //background-color: rgb(26, 28, 75);
+    background-color: white;
 }
 
 #header-new:active .glyphicon.glyphicon-plus {
     //font-size: 20px;
-    color: white;
+    //color: white;
+    color: rgb(26, 28, 75);
 }
 
 #header-search {
@@ -268,22 +271,15 @@ body {
     background-color: rgb(26, 28, 75);
 }
 
-#header-search:hover {
-    background-color: white;
-}
-
-#header-search:hover .glyphicon.glyphicon-search {
-    //font-size: 20px;
-    color: rgb(26, 28, 75);
-}
-
 #header-search:active {
-    background-color: rgb(26, 28, 75);
+    //background-color: rgb(26, 28, 75);
+    background-color: white;
 }
 
 #header-search:active .glyphicon.glyphicon-search {
     //font-size: 20px;
-    color: white;
+    //color: white;
+    color: rgb(26, 28, 75);
 }
 
 .glyphicon.glyphicon-resize-full {
@@ -331,23 +327,21 @@ body {
     color: white;
 }
 
-#deletearticle:hover .glyphicon.glyphicon-trash {
-    //font-size: 18px;
-    color: #b5b5df;
-}
-
 #deletearticle:active {
-    background-color: #b5b5df;
+    //background-color: #b5b5df;
+    background-color: white;
 }
 
 #deletearticle:active .glyphicon.glyphicon-trash {
     //font-size: 18px;
-    color: white;
+    //color: white;
+    color: rgb(26, 28, 75);
 }
 
 #savearticle {
-    border: 2px solid #b5b5df;
-    background-color: #b5b5df;
+    border: 2px solid rgb(26, 28, 75);
+    //background-color: #b5b5df;
+    background-color: rgb(26, 28, 75);
     height: 30px;
     width: 30px;
     border-radius: 15px;
@@ -355,29 +349,19 @@ body {
     margin-right: 8px;
     padding-top: 4px;
     padding-left: 5px;
-}
-
-#savearticle:hover {
-    background-color: white;
-}
-
-#savearticle:hover .glyphicon.glyphicon-floppy-save {
-    //font-size: 18px;
-    color: #b5b5df;
 }
 
 #savearticle:active {
-    background-color: #b5b5df;
+    background-color: white;
 }
 
 #savearticle:active .glyphicon.glyphicon-floppy-save {
-    //font-size: 18px;
-    color: white;
+    color: rgb(26, 28, 75);
 }
 
 #cancelchangedarticle {
-    border: 2px solid #b5b5df;
-    background-color: #b5b5df;
+    border: 2px solid rgb(26, 28, 75);
+    background-color: rgb(26, 28, 75);
     height: 30px;
     width: 30px;
     border-radius: 15px;
@@ -387,27 +371,19 @@ body {
     padding-left: 5px;
 }
 
-#cancelchangedarticle:hover {
-    background-color: white;
-}
-
-#cancelchangedarticle:hover .glyphicon.glyphicon-floppy-remove {
-    //font-size: 18px;
-    color: #b5b5df;
-}
-
 #cancelchangedarticle:active {
-    background-color: #b5b5df;
+    background-color: white;
 }
 
 #cancelchangedarticle:active .glyphicon.glyphicon-floppy-remove {
     //font-size: 18px;
-    color: white;
+    color: rgb(26, 28, 75);
 }
 
 #searcharticle-div {
     height: 100%;
-    background-color: #c9c9e8;
+    //background-color: #c9c9e8;
+    background-color: #2e2e52;
     //background-color: red;
     //border-left: 2px solid white;
     //border-right: 2px solid white;
@@ -437,14 +413,40 @@ body {
 }
 
 #searcharticle-div form input {
-    color: #131326;
-    background-color: #c9c9e8;
+    color: white;
+    background-color: #2e2e52;
     border-right-style: none;
     border-top-style: none;
     border-left-style: none;
     border-bottom-style: 1px solid rgb(102, 102, 99);
-    width: 100%;
+    width: 85%;
     font-family: 'Jura', sans-serif;
+    //font-family: 'Orbitron', sans-serif;
+}
+
+#findarticle .glyphicon.glyphicon-search {
+    font-size: 20px;
+}
+
+#findarticle {
+    float: right;
+    margin-top: -33px;
+    margin-right: -5px;
+    //border: 2px solid rgb(26, 28, 75);
+    background-color: rgb(26, 28, 75);
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+#findarticle:active {
+    background-color: white;
+}
+
+#findarticle:active .glyphicon.glyphicon-search {
+    color: rgb(26, 28, 75);
 }
 
 #searcharticle-div-header {
@@ -480,52 +482,58 @@ body {
     overflow-x: hidden;
 }
 
-#dump {
-    //position: absolute;
-    //right: 3%;
-    //display: block;
-    border: 2px solid #b5b5df;
-    background-color: #b5b5df;
+#saveanddone {
+    border: 2px solid rgb(26, 28, 75);
+    //background-color: #b5b5df;
+    background-color: rgb(26, 28, 75);
     height: 30px;
     width: 30px;
     border-radius: 15px;
-    padding-top: 4px;
-    padding-left: 4px;
     float: right;
-    margin-right: 10px;
+    margin-right: 8px;
+    padding-top: 1px;
+    padding-left: 3.5px;
 }
 
-#dump:hover {
-    background-color: white;
-}
-
-#dump:hover .glyphicon.glyphicon-floppy-remove {
-    //font-size: 20px;
-    color: #b5b5df;
-}
-
-#dump:active {
-    background-color: #b5b5df;
-}
-
-#dump:active .glyphicon.glyphicon-floppy-remove {
-    //font-size: 20px;
+.glyphicon.glyphicon-check {
+    font-size: 20px;
     color: white;
 }
 
-#done {
-    //position: absolute;
-    //right: 1%;
-    //display: block;
-    border: 2px solid #b5b5df;
-    background-color: #b5b5df;
+#saveanddone:active {
+    background-color: white;
+}
+
+#saveanddone:active .glyphicon.glyphicon-check {
+    //font-size: 18px;
+    color: rgb(26, 28, 75);
+}
+
+#editarticle {
+    border: 2px solid rgb(26, 28, 75);
+    //background-color: #b5b5df;
+    background-color: rgb(26, 28, 75);
     height: 30px;
     width: 30px;
     border-radius: 15px;
-    padding-top: 5px;
-    padding-left: 5px;
     float: right;
-    margin-right: 10px;
+    margin-right: 8px;
+    padding-top: 2px;
+    padding-left: 3px;
+}
+
+.glyphicon.glyphicon-edit {
+    font-size: 20px;
+    color: white;
+}
+
+#editarticle:active {
+    background-color: white;
+}
+
+#editarticle:active .glyphicon.glyphicon-edit {
+    //font-size: 18px;
+    color: rgb(26, 28, 75);
 }
 
 
@@ -566,6 +574,10 @@ body {
     position: fixed;
     border: 1px solid red;
 }*/
+
+body.mceContentBody {
+    background: #000;
+}
 
 @media only screen and (max-width: 780px) {
     #mainarea {
