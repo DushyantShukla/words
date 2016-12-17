@@ -1,3 +1,6 @@
+var isAdded = false;
+var winWidth = $(window).width();
+
 $(document).ready(function() {
 
     $('[data-toggle="tooltip"]').tooltip();
@@ -26,20 +29,29 @@ $(function() {
     });
 
     $('body').on('click', '#cancelchangedarticle', function() {
-      console.log("hide");
-      tinymce.editors['content-textarea'].hide();
+        console.log("hide");
+        tinymce.editors['content-textarea'].hide();
     });
 });
 
-function postInitWork(){
-  console.log("color");
-var editor = tinyMCE.getInstanceById('content-textarea');
-editor.getBody().style.backgroundColor = "#FFFF66";
-}
-
 function doresize() {
     console.log("function called");
-    var winWidth = $(window).width();
+        if (!isAdded && winWidth >= 780) {
+            isAdded = true;
+            $('#column-wrap').append('<div id="mainarea"><div id="mainarea-inner"><div id="mainarea-inner-header" class="mainareaHeaderContent"><div id="deletearticle"><a href="#" data-toggle="tooltip" class="anchor-style" title="delete article" data-placement="left" id="expandarticle-anchor">' +
+                '<span class="glyphicon glyphicon-trash"></span></a></div>' +
+                '<div id="cancelchangedarticle"><a href="#" data-toggle="tooltip" class="anchor-style" title="discard changes" data-placement="left" id="expandarticle-anchor"><span class="glyphicon glyphicon-floppy-remove"></span></a></div>' +
+                '<div id="savearticle"><a href="#" data-toggle="tooltip" class="anchor-style" title="save changes" data-placement="left" id="expandarticle-anchor"><span class="glyphicon glyphicon-floppy-save"></span></a></div>' +
+                '<div id="saveanddone"><a href="#" data-toggle="tooltip" class="anchor-style" title="save and done" data-placement="left" id="expandarticle-anchor"><span class="glyphicon glyphicon-check"></span></a></div>' +
+                '<div id="editarticle"><a href="#" data-toggle="tooltip" class="anchor-style" title="edit article" data-placement="left" id="expandarticle-anchor"><span class="glyphicon glyphicon-edit"></span></a></div>' +
+                '</div><div id="mainarea-inner-content" class="mainareaHeaderContent">' +
+                '<div id="content-textarea"></div></div></div></div>'
+            );
+        } else if (isAdded && winWidth < 780) {
+            isAdded = false;
+            $('#mainarea').remove();
+        }
+
     var contentAreaHeight = $('#mainarea-inner-content').height();
     contentAreaHeight -= 44;
     console.log(contentAreaHeight);
@@ -51,7 +63,6 @@ function doresize() {
             statusbar: false,
             resize: false,
             height: contentAreaHeight,
-            oninit : postInitWork,
             body_class: 'mceBlackBody',
             plugins: [
                 'advlist autolink lists link charmap print preview anchor',
@@ -74,7 +85,6 @@ function doresize() {
             statusbar: false,
             resize: false,
             height: contentAreaHeight,
-            oninit : postInitWork,
             plugins: [
                 'advlist autolink lists link charmap print preview anchor',
                 'searchreplace visualblocks code fullscreen',
@@ -96,7 +106,6 @@ function doresize() {
             statusbar: false,
             resize: false,
             height: contentAreaHeight,
-            oninit : postInitWork,
             plugins: [
                 'advlist autolink lists link charmap print preview anchor',
                 'searchreplace visualblocks code fullscreen',
